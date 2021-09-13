@@ -1,0 +1,53 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "usuario": "John Doe",
+      "email": "john.due@gmail.com"
+    }
+  ],
+  "dispositivos": [
+    {
+      "id": "1",
+      "nombre": "Casa de abuela",
+      "serie": "123456789",
+      "tipo": "Termometro",
+      "usuarioId": "1"
+    },
+    {
+      "id": "2",
+      "nombre": "Patio",
+      "serie": "12345jkgt",
+      "tipo": "Contacto",
+      "usuarioId": "1"
+    },
+    {
+      "id": "3",
+      "nombre": "Calle",
+      "serie": "12345jytdf",
+      "tipo": "Camara",
+      "usuarioId": "1"
+    },
+    {
+      "id": "4",
+      "nombre": "Comedor",
+      "serie": "12345jytdf",
+      "tipo": "Termometro",
+      "usuarioId": "1"
+    },
+    {
+      "id": "5",
+      "nombre": "Casa de tio",
+      "serie": "12345jytdf",
+      "tipo": "Foco",
+      "usuarioId": "1"
+    },
+    {
+      "id": "6",
+      "nombre": "tienda de don antero",
+      "serie": "12345jytdf",
+      "tipo": "Camara",
+      "usuarioId": "1"
+    }
+  ]
+}
