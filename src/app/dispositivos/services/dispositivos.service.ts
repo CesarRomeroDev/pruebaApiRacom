@@ -20,4 +20,8 @@ export class DispositivosService {
   getDispositivoPorId( id: string ):Observable<Dispositivo> {
     return this.http.get<Dispositivo>(`${ this.baseUrl }/dispositivos/${ id }`);
   }
+
+  agregarDispositivo( dispositivo: Dispositivo ): Observable<Dispositivo> {
+    return this.http.post<Dispositivo>(`${ this.baseUrl }/dispositivos`, dispositivo);
+  }
 }

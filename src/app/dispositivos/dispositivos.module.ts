@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
@@ -21,6 +22,7 @@ import { IdPipe } from './pipes/id.pipe';
     IdPipe
   ],
   imports: [
+    FormsModule,
     CommonModule,
     DispositivosRoutingModule
   ]

@@ -1,19 +1,19 @@
 <div class="row">
-    <h4>Nuevo Dispositivos <small>{{ dispositivo.nombre }}</small> </h4>
+    <h4>Nuevo Dispositivos</h4>
     <form>
-          <input type="text">
-          <label >Nombre</label>
+          <input name="nombre" type="text" [(ngModel)]="dispositivo.nombre">
+          <label>Nombre</label>
       <div>
-          <input type="text">
-          <label>Serie</label>
+          <input name="serie" type="text" [(ngModel)]="dispositivo.serie">
+          <label for="serie">Serie</label>
       </div>
-          <input type="text" >
+          <input name="tipo" type="text" [(ngModel)]="dispositivo.tipo">
           <label>Tipo</label>
         <div>
-          <input type="text">
+          <input name="usuarioId" type="text" [(ngModel)]="dispositivo.usuarioId">
           <label>Usuario</label>
         </div>
         <br>
-      <a class="waves-effect waves-light btn">Guardar</a>
+      <a class="waves-effect waves-light btn" (click)="guardar()" >Guardar</a>
     </form>
   </div>
