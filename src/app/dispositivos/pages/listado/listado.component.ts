@@ -10,7 +10,7 @@ import { Dispositivo } from '../../interfaces/dispositivos.interface';
 })
 export class ListadoComponent implements OnInit {
 
-  dispositivos: Dispositivo[] = []
+  dispositivos: Dispositivo[] = [];
 
   constructor( private dispositivosService: DispositivosService) { }
 
