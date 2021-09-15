@@ -7,7 +7,7 @@
           <th>Serie</th>
           <th>Tipo</th>
           <th>Usuario</th>
-          <th>Leer Mas...</th>
+          <!--<th>Leer Mas...</th>-->
           <th>Editar</th>
       </tr>
     </thead>
@@ -18,8 +18,8 @@
         <td>{{ dispositivo.serie }}</td>
         <td>{{ dispositivo.tipo }}</td>
         <td>{{ dispositivo.usuarioId }}</td>
-        <td><a class="waves-effect waves-light btn" [routerLink]="['/dispositivos', dispositivo.id]">Leer</a></td>
-        <td><a class="waves-effect waves-light btn" [routerLink]="['', dispositivo.id]">Editar</a></td>
+        <!--<td><a class="waves-effect waves-light btn" [routerLink]="['/dispositivos', dispositivo.id]">Leer</a></td>-->
+        <td><a class="waves-effect waves-light btn" [routerLink]="['/dispositivos/editar', dispositivo.id]">Editar</a></td>
       </tr>
     </tbody>
   </table>

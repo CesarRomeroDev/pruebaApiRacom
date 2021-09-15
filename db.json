@@ -48,6 +48,20 @@
       "serie": "12345jytdf",
       "tipo": "Camara",
       "usuarioId": "1"
+    },
+    {
+      "nombre": "Pepe",
+      "serie": "HHHG77",
+      "tipo": "Zapatos",
+      "usuarioId": "10",
+      "id": "n6kYvnH"
+    },
+    {
+      "nombre": "julio",
+      "serie": "fkkf4543",
+      "tipo": "Perfume",
+      "usuarioId": "1",
+      "id": "ERdVxWr"
     }
   ]
 }

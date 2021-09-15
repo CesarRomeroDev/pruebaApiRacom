@@ -24,4 +24,7 @@ export class DispositivosService {
   agregarDispositivo( dispositivo: Dispositivo ): Observable<Dispositivo> {
     return this.http.post<Dispositivo>(`${ this.baseUrl }/dispositivos`, dispositivo);
   }
+  ActualizarDispositivo( dispositivo: Dispositivo ): Observable<Dispositivo> {
+    return this.http.put<Dispositivo>(`${ this.baseUrl }/dispositivos/${ dispositivo.id }`, dispositivo);
+  }
 }
