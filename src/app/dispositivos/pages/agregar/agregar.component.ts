@@ -24,13 +24,17 @@ export class AgregarComponent implements OnInit {
                private activatedRoute: ActivatedRoute,              //editar
                private router: Router ) { }                          //editar
 
-  ngOnInit(): void {
+  ngOnInit(): void {    //peticiones http
 
+    if( !this.router.url.includes('editar') ){
+      return
+    }
 
     this.activatedRoute.params
         .pipe(
           switchMap( ({ id }) => this.dispositivosService.getDispositivoPorId( id ) )   //editar
         )
+        // .subscribe( ({ id }) ) => console.log(id);
         .subscribe( dispositivo => this.dispositivo = dispositivo);                     //editar: nuestro ngModel esta asiciado a nuestros dispositivos por eso es que carga la informacion
 
   }
@@ -54,6 +58,12 @@ export class AgregarComponent implements OnInit {
         this.router.navigate([ '/dispositivos/listado', dispositivo.id ]);
       } )
     }
+  }
+  borrar(){
+    this.dispositivosService.borrarDispositivo( this.dispositivo.id! )
+        .subscribe( resp => {
+          this.router.navigate(['/dispositivos/listado'])
+        } )
   }
 
 }

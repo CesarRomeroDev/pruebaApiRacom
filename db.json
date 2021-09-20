@@ -50,18 +50,25 @@
       "usuarioId": "1"
     },
     {
-      "nombre": "Pepe",
-      "serie": "HHHG77",
-      "tipo": "Zapatos",
-      "usuarioId": "10",
-      "id": "n6kYvnH"
+      "id": "7",
+      "nombre": "Estacionamiento",
+      "serie": "12345jytdf",
+      "tipo": "Carro",
+      "usuarioId": "1"
     },
     {
-      "nombre": "julio",
-      "serie": "fkkf4543",
-      "tipo": "Perfume",
-      "usuarioId": "1",
-      "id": "ERdVxWr"
+      "id": "8",
+      "nombre": "Parque",
+      "serie": "12345jytdf",
+      "tipo": "Arboles",
+      "usuarioId": "1"
+    },
+    {
+      "id": "9",
+      "nombre": "Escuela",
+      "serie": "12345jytdf",
+      "tipo": "Alumnos",
+      "usuarioId": "1"
     }
   ]
 }

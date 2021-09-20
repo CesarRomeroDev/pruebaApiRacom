@@ -27,4 +27,10 @@ export class DispositivosService {
   ActualizarDispositivo( dispositivo: Dispositivo ): Observable<Dispositivo> {
     return this.http.put<Dispositivo>(`${ this.baseUrl }/dispositivos/${ dispositivo.id }`, dispositivo);
   }
+
+  borrarDispositivo( id: string ): Observable<any> {
+    return this.http.delete<any>(`${ this.baseUrl }/dispositivos/${ id }`);
+  }
 }
+
+//oservable : Es aquello que queremos observar, que será implementado mediante una colección de eventos o valores futuros. Un observable puede ser creado a partir de eventos de usuario derivados del uso de un formulario, una llamada HTTP, un almacén de datos, etc.

@@ -1,8 +1,8 @@
-<h4>Dispositivos</h4>
+<h2>Dispositivos</h2>
 <table class="striped">
     <thead>
       <tr>
-          <th>Id</th>
+          <!--<th>Id</th>-->
           <th>Nombre</th>
           <th>Serie</th>
           <th>Tipo</th>
@@ -13,13 +13,14 @@
     </thead>
     <tbody>
       <tr *ngFor="let dispositivo of dispositivos">
-        <td>{{ dispositivo | id }}</td>
+        <!--<td>{{ dispositivo | id }}</td>-->
         <td>{{ dispositivo.nombre }}</td>
         <td>{{ dispositivo.serie }}</td>
         <td>{{ dispositivo.tipo }}</td>
         <td>{{ dispositivo.usuarioId }}</td>
         <!--<td><a class="waves-effect waves-light btn" [routerLink]="['/dispositivos', dispositivo.id]">Leer</a></td>-->
-        <td><a class="waves-effect waves-light btn" [routerLink]="['/dispositivos/editar', dispositivo.id]">Editar</a></td>
+        <td><a class="waves-effect waves-light btn blue lighten-2" [routerLink]="['/dispositivos/editar', dispositivo.id]"><i class=" material-icons">border_color</i></a></td>
       </tr>
     </tbody>
   </table>
+  <a [routerLink]="['/dispositivos/agregar']" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>

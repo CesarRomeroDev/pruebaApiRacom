@@ -1,5 +1,4 @@
 <div class="row">
-    <h4>Nuevo Dispositivos</h4>
     <form>
           <input name="nombre" type="text" [(ngModel)]="dispositivo.nombre">
           <label>Nombre</label>
@@ -15,5 +14,7 @@
         </div>
         <br>
       <a class="waves-effect waves-light btn" (click)="guardar()" >Guardar</a>
+      <a class="waves-effect waves-light btn red darken-1" *ngIf="dispositivo.id" (click)="borrar()"><i class="material-icons">delete_forever</i></a>
+      
     </form>
   </div>
